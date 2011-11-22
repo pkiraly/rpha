@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+        "http://tuckey.org/res/dtds/urlrewrite2.6.dtd">
+
+<!-- Configuration file for UrlRewriteFilter
+	http://tuckey.org/urlrewrite/ -->
+<urlrewrite>
+
+	<rule>
+		<note>
+			The rule means that requests to /test/status/ will be
+			redirected to /rewrite-status the url will be rewritten.
+		</note>
+		<from>/test/status/</from>
+		<to type="redirect">%{context-path}/rewrite-status</to>
+	</rule>
+
+	<rule>
+		<from>^/id/([0-9]+.?)</from>
+		<to>/search.do?fields[]=id&amp;values[]=$1&amp;outputFormat=html</to>
+	</rule>
+
+	<rule>
+		<from>^/xml/([0-9]+.?)</from>
+		<to>/search.do?fields[]=id&amp;values[]=$1&amp;outputFormat=xml</to>
+	</rule>
+
+	<rule>
+		<from>^/book/([^\/]+)</from>
+		<to>/search.do?fields[]=id&amp;values[]=$1&amp;recordType=book&amp;outputFormat=book</to>
+	</rule>
+
+	<rule>
+		<from>^/listbooks</from>
+		<to>/listBooks.do</to>
+	</rule>
+
+	<rule>
+		<from>^/booktype/([^\/]+)</from>
+		<to>/listBooks.do?type=$1</to>
+	</rule>
+
+	<rule>
+		<note>Attach source to poem</note>
+		<from>^/newversion/([0-9]+.?)</from>
+		<to>/newVersion.do?poem=$1</to>
+	</rule>
+
+	<rule>
+		<note>Edit a version of a poem (the meeting point of the poem and a source</note>
+		<from>^/editversion/([0-9]+.?)/(.+?)</from>
+		<to>/editVersion.do?poem=$1&amp;source=$2</to>
+	</rule>
+
+	<rule>
+		<from>^/saveversion/([0-9]+[a-z]?)/(.+)$</from>
+		<to>/saveVersion.do?poem=$1&amp;source=$2&amp;type=a</to>
+	</rule>
+
+	<rule>
+		<from>^/saveversion/([0-9]+.?)</from>
+		<to>/saveVersion.do?poem=$1&amp;type=b</to>
+	</rule>
+
+	<rule>
+		<from>^/deleteversion/([0-9]+.?)/(.+?)</from>
+		<to>/deleteVersion.do?poem=$1&amp;source=$2</to>
+	</rule>
+
+	<rule>
+		<note>New book</note>
+		<from>^/newbook</from>
+		<to>/newBook.do</to>
+	</rule>
+
+	<rule>
+		<note>Edit book</note>
+		<from>^/editbook/(.+?)</from>
+		<to>/editBook.do?id=$1</to>
+	</rule>
+
+	<rule>
+		<note>Save book</note>
+		<from>^/savebook/(.+?)</from>
+		<to>/saveBook.do?id=$1</to>
+	</rule>
+
+	<rule>
+		<note>Save book</note>
+		<from>^/savebook</from>
+		<to>/saveBook.do</to>
+	</rule>
+
+	<rule>
+		<note>Delete book</note>
+		<from>^/deletebook/(.+?)</from>
+		<to>/deleteBook.do?id=$1</to>
+	</rule>
+
+	<rule>
+		<note>Get the list of incipits</note>
+		<from>^/inc/(.+?)</from>
+		<to>/incipit.do?inc=$1</to>
+	</rule>
+
+	<rule>
+		<note>Get the poweruser search form</note>
+		<from>^/search/advanced</from>
+		<to>/search.do?searchFormID=advanced&amp;action=form</to>
+	</rule>
+
+	<rule>
+		<note>Get rpha5 search form</note>
+		<from>^/search/rpha5</from>
+		<to>/multifieldSearch.do</to>
+	</rule>
+
+	<rule>
+		<note>Get field search form</note>
+		<from>^/search/field</from>
+		<to>/fieldSearch.do</to>
+	</rule>
+
+	<outbound-rule>
+		<note>
+			The outbound-rule specifies that when response.encodeURL is
+			called (if you are using JSTL c:url) the url /rewrite-status
+			will be rewritten to /test/status/.
+
+			The above rule and this outbound-rule means that end users
+			should never see the url /rewrite-status only /test/status/
+			both in thier location bar and in hyperlinks in your pages.
+		</note>
+		<from>/rewrite-status</from>
+		<to>/test/status/</to>
+	</outbound-rule>
+
+</urlrewrite>
+

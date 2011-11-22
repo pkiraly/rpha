@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keys>
+	<key id="author">Auteur</key>
+
+	<key id="caesuras">Césures</key>
+
+	<key id="date">Datation</key>
+
+	<key id="declination">Organisation phonique des fins de vers d'une portée métrique</key>
+
+	<key id="declination.line">Organisation phonique des fins de vers de portée métrique</key>
+	<key id="declination.line.01">rythme descendant</key>
+	<key id="declination.line.02">rythme ascendant</key>
+	<key id="declination.line.03">critere non applicable</key>
+	<key id="declination.scheme">systeme gonique</key>
+	<key id="declination.strophe">niveau des strophes</key>
+	<key id="declination.strophe.01">homogonie</key>
+	<key id="declination.strophe.02">hétérogonie</key>
+
+	<key id="genre">Genre</key>
+
+	<key id="language">Langue</key>
+
+	<key id="language.01">sporadic bilinguism</key>
+	<key id="language.02">change language by rows</key>
+	<key id="language.03">change language in strophes</key>
+	<key id="language.04">the refrain and body of strophe are in different languages</key>
+	<key id="language.qualifier">type</key>
+
+	<key id="melody">Mélodie</key>
+
+	<key id="melody.01">chanté</key>
+	<key id="melody.01.01">mélodie conservée</key>
+	<key id="melody.01.02">mélodie non-conservée</key>
+	<key id="melody.02">non-chanté</key>
+	<key id="melody.03">on ne peut pas déciser</key>
+
+	<key id="meter">Métrique</key>
+
+	<key id="meter.01">versification métrique gréco-latine</key>
+	<key id="meter.01.01-01">en hexametre monostiche</key>
+	<key id="meter.01.01-02">en hexametre plusieurs vers</key>
+	<key id="meter.01.02-01">distiche - un seul</key>
+	<key id="meter.01.02-02">distiche - plusieurs</key>
+	<key id="meter.01.03">métrique gréco-latine, ni hexametre, ni distiche, mais un metre identifiable</key>
+	<key id="meter.01.04">métrique gréco-latine, metre particulier, sans avatar dans la tradition littéraire</key>
+	<key id="meter.02">syllabique</key>
+	<key id="meter.03">quasi-syllabique (syllabique approximatif)</key>
+	<key id="meter.04">tonique</key>
+	<key id="meter.05">chaque mot constitue un pied</key>
+	<key id="meter.06">vers libres</key>
+	<key id="meter.07">syllabo-tonique</key>
+	<key id="meter.07.01">allemand (moyen âge tardif, poemes strictement syllabiques) ou anglais (p. ex. pentametre iambique)</key>
+	<key id="meter.07.02">a l'imitation du gréco-latin, mais syllabisme stricte (vers mesurés)</key>
+	<key id="meter.08">compositions mixtes (les différentes parties du poeme appartiennent a des catégories différentes</key>
+
+	<key id="metrical_scheme">Schéma métrique (nombre de syllabes)</key>
+
+	<key id="number_of_lines">Nombre des ...</key>
+
+	<key id="number_of_strophes">Nombre des strophes</key>
+
+	<key id="rhyme">Rimes</key>
+
+	<key id="rhyme.01">sans rimes</key>
+	<key id="rhyme.01.01">allitérations</key>
+	<key id="rhyme.01.02">ni rimes, ni allitération</key>
+	<key id="rhyme.02">rimé</key>
+	<key id="rhyme.03">assonancé</key>
+	<key id="rhyme.04">mot-refrain (technique des rimes &#x00E0; l'identique, comme dans la sextine)</key>
+
+	<key id="rhyme_scheme">Schéma rimique</key>
+
+	<key id="segmentation">Segmentation</key>
+
+	<key id="segmentation.01">strophique, plusieurs strophes</key>
+	<key id="segmentation.01.01">isostrophique</key>
+	<key id="segmentation.01.02">hétérostrophique</key>
+	<key id="segmentation.02">strophique, une seule strophe</key>
+	<key id="segmentation.03">rimes plates</key>
+	<key id="segmentation.04">laisses</key>
+	<key id="segmentation.05">rimes couées, serventese (italien)</key>
+	<key id="segmentation.06">terza rima</key>
+
+</keys>

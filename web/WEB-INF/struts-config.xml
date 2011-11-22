@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans >
+		<form-bean name="searchForm" 
+			type="com.kirunews.rpha.struts.form.SearchForm" />
+		<form-bean name="editVersionForm" 
+			type="com.kirunews.rpha.struts.form.EditVersionForm" />
+		<form-bean name="saveVersionForm" 
+			type="com.kirunews.rpha.struts.form.SaveVersionForm" />
+		<form-bean name="listBooksForm" 
+			type="com.kirunews.rpha.struts.form.ListBooksForm" />
+		<form-bean name="incipitForm" 
+			type="com.kirunews.rpha.struts.form.IncipitForm" />
+		<form-bean name="deleteVersionForm" 
+			type="com.kirunews.rpha.struts.form.DeleteVersionForm" />
+		<form-bean name="newBookForm" 
+			type="com.kirunews.rpha.struts.form.NewBookForm" />
+		<form-bean name="editBookForm" 
+			type="com.kirunews.rpha.struts.form.EditBookForm" />
+		<form-bean name="deleteBookForm" 
+			type="com.kirunews.rpha.struts.form.DeleteBookForm" />
+		<form-bean name="saveBookForm" 
+			type="com.kirunews.rpha.struts.form.SaveBookForm" />
+		<form-bean name="newVersionForm" 
+			type="com.kirunews.rpha.struts.form.NewVersionForm" />
+		<form-bean name="commonSearchForm"
+			type="com.kirunews.rpha.struts.form.CommonSearchForm" />
+		<form-bean name="changeLocaleForm" 
+			type="com.kirunews.rpha.struts.form.ChangeLocaleForm" />
+		<form-bean name="advancedSearchForm" 
+			type="com.kirunews.rpha.struts.form.AdvancedSearchForm" />
+		<form-bean name="openSearchForm" 
+			type="com.kirunews.rpha.struts.form.OpenSearchForm" />
+		<form-bean name="multifieldSearchForm" 
+			type="com.kirunews.rpha.struts.form.MultifieldSearchForm" />
+		<form-bean name="fieldSearchForm" 
+			type="com.kirunews.rpha.struts.form.FieldSearchForm" />
+	</form-beans>
+	
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings >
+		<action attribute="searchForm" input="/form/search.jsp"
+			name="searchForm" path="/search" scope="request"
+			type="com.kirunews.rpha.struts.action.SearchAction">
+			<forward name="xml"  path="/form/searchXml.jsp"/>
+			<forward name="html" path="/form/searchHtml.jsp"/>
+			<forward name="book" path="/form/bookList.jsp"/>
+			<forward name="search-advanced" path="/form/search-advanced.jsp"/>
+			<forward name="search-rpha5"  path="/form/search-rpha5.jsp"/>
+			<forward name="default" path="/form/search.jsp"/>
+		</action>
+
+		<action attribute="listBooksForm" input="/form/listBooks.jsp"
+			name="listBooksForm" path="/listBooks" scope="request"
+			type="com.kirunews.rpha.struts.action.ListBooksAction" />
+
+		<action attribute="incipitForm" input="/form/incipit.jsp"
+			name="incipitForm" path="/incipit" scope="request"
+			type="com.kirunews.rpha.struts.action.IncipitAction" />
+
+		<action attribute="newVersionForm" input="/form/newVersion.jsp"
+			name="newVersionForm" path="/newVersion" scope="request"
+			type="com.kirunews.rpha.struts.action.NewVersionAction" />
+
+		<action attribute="editVersionForm" input="/form/editVersion.jsp"
+			name="editVersionForm" path="/editVersion" scope="request"
+			type="com.kirunews.rpha.struts.action.EditVersionAction" />
+
+		<action attribute="saveVersionForm" input="/form/saveVersion.jsp"
+			name="saveVersionForm" path="/saveVersion" scope="request"
+			type="com.kirunews.rpha.struts.action.SaveVersionAction" />
+
+		<action attribute="deleteVersionForm" input="/form/deleteVersion.jsp"
+			name="deleteVersionForm" path="/deleteVersion" scope="request"
+			type="com.kirunews.rpha.struts.action.DeleteVersionAction" />
+			
+		<action attribute="newBookForm" input="/form/newBook.jsp"
+			name="newBookForm" path="/newBook" scope="request"
+			type="com.kirunews.rpha.struts.action.NewBookAction" />
+		
+		<action attribute="editBookForm" input="/form/editBook.jsp"
+			name="editBookForm" path="/editBook" scope="request"
+			type="com.kirunews.rpha.struts.action.EditBookAction" />
+			
+		<action attribute="saveBookForm" input="/form/saveBook.jsp"
+			name="saveBookForm" path="/saveBook" scope="request"
+			type="com.kirunews.rpha.struts.action.SaveBookAction" />
+		
+		<action attribute="deleteBookForm" input="/form/deleteBook.jsp"
+			name="deleteBookForm" path="/deleteBook" scope="request"
+			type="com.kirunews.rpha.struts.action.DeleteBookAction" />
+
+		<action attribute="commonSearchForm" input="/form/commonSearch.jsp"
+			name="commonSearchForm" path="/commonSearch" scope="request" 
+			type="com.kirunews.rpha.struts.action.CommonSearchAction" />
+			
+		<action attribute="changeLocaleForm" input="/form/changeLocale.jsp"
+			name="changeLocaleForm" path="/changeLocale" scope="request"
+			type="com.kirunews.rpha.struts.action.ChangeLocaleAction" />
+			
+		<action attribute="advancedSearchForm" input="/form/advancedSearch.jsp"
+			name="advancedSearchForm" path="/advancedSearch" scope="request"
+			type="com.kirunews.rpha.struts.action.AdvancedSearchAction" />
+		
+		<action attribute="openSearchForm" input="/form/openSearch.jsp"
+			name="openSearchForm" path="/openSearch" scope="request"
+			type="com.kirunews.rpha.struts.action.OpenSearchAction" />
+			
+		<action attribute="multifieldSearchForm" input="/form/multifieldSearch.jsp"
+			name="multifieldSearchForm" path="/multifieldSearch" scope="request"
+			type="com.kirunews.rpha.struts.action.MultifieldSearchAction" />
+
+		<action attribute="fieldSearchForm" input="/form/fieldSearch.jsp"
+			name="fieldSearchForm" path="/fieldSearch" scope="request"
+			type="com.kirunews.rpha.struts.action.FieldSearchAction" />
+	</action-mappings>
+	
+	<message-resources parameter="com.kirunews.rpha.struts.ApplicationResources" />
+
+</struts-config>

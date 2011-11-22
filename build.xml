@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="rpha" default="deploy" basedir=".">
+
+	<property file="build.properties" />
+	
+	<property name="project.name"  value="${ant.project.name}" />
+	<property name="src.dir"  value="${basedir}/src" />
+	<property name="test.dir" value="${basedir}/test" />
+	<property name="web.dir"  value="${basedir}/web" />
+	<property name="build.dir"  value="${basedir}/build" />
+	<property name="build.classes.dir"  value="${basedir}/build/classes" />
+	
+	<property name="lib.dir" value="${basedir}/lib/dependencies" />
+	<property name="j2ee.lib.dir" value="${basedir}/web/WEB-INF/lib" />
+	<property name="tomcat.lib.dir" value="${tomcat.dir}/common/lib" />
+	<property name="struts.dir" value="com/kirunews/rpha/struts" />
+	
+	<path id="classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${j2ee.lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${tomcat.lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="deploy" depends="compile, build-war">
+		<echo message="Delete ${deploy.dir}/${project.name}" />
+		<delete dir="${deploy.dir}/${project.name}" />
+		
+		<echo message="Deploy ${project.name}.war" />
+		<copy file="${build.dir}/${project.name}.war" todir="${deploy.dir}" />
+	</target>
+
+	<target name="compile" depends="prepare">
+		<echo>${j2ee.lib.dir}</echo>
+		<javac srcdir="${src.dir}" destdir="${build.classes.dir}"
+			debug="on" 
+			deprecation="on" 
+			optimize="off" 
+			failonerror="false" 
+			compiler="modern">
+			<classpath refid="classpath" />
+		</javac>
+		<copy todir="${build.classes.dir}">
+			<fileset dir="${src.dir}" includes="**/*.properties"/>
+		</copy>
+	</target>
+
+	<target name="prepare">
+		<mkdir dir="${build.dir}" />
+		<delete dir="${build.classes.dir}" />
+		<mkdir dir="${build.classes.dir}" />
+		<!-- mkdir dir="${test.classes.dir}" /-->
+		<!-- mkdir dir="${report.dir}" /-->
+	</target>
+
+	<target name="build-war" depends="compile">
+		<war destfile="${build.dir}/${project.name}.war" 
+			webxml="${web.dir}/WEB-INF/web.xml"	>
+			
+			<fileset dir="${web.dir}" excludes="**/web.xml"/>
+			<!-- lib dir="${lib.dir}" / -->
+			<classes dir="${build.classes.dir}" />
+		</war>
+	</target>
+
+</project>

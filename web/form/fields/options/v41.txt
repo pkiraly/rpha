@@ -1,0 +1,5 @@
+<option value="">-- [ válasszon! ] --</option>
+<option value="1">A vers szövege teljes</option>
+<option value="2">töredék - töredék terjedelme</option>
+<option value="3">töredék - a vers terjedelme</option>
+<option value="4">bizonytalan</option>

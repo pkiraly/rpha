@@ -1,0 +1,5 @@
+<option value="">-- [ válasszon! ] --</option>
+<option value="1">nem tudjuk megállapítani</option>
+<option value="2">meghatározható közvetlen minta</option>
+<option value="3">bizonyosan közvetlen minta</option>
+<option value="4">Nem tudjuk, hogy volt-e mintája</option>

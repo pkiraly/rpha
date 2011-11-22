@@ -1,0 +1,4 @@
+<option value="">-- [ válasszon! ] --</option>
+<option value="1">versszak</option>
+<option value="2">sor</option>
+<option value="3">bekezdés</option>

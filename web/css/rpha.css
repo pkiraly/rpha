@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+body, td { 
+	font-family: verdana; font-size: 10pt; 
+}
+
+a, a.visited { 
+	color: red 
+}
+
+p {
+	margin: 3px 0 3px 0;
+	text-indent: 10px;
+}
+
+h1 {
+	font-size: 10pt;
+}
+
+h2, h3 {
+	text-align: center; 
+	font-size: 10pt;
+}
+h3 {
+	text-align: left; 
+	margin: 0;
+}
+h3 span {
+	background-color: purple; 
+	color: white; 
+	padding-left: 5px; 
+	padding-right: 5px; 
+}
+div.szintezis, div.analizis { 
+	border: 1px solid purple; 
+	margin-bottom: 10px; 
+	width: 49%; 
+}
+div.szintezis { 
+	float: left; 
+}
+
+div.analizis { 
+	float: right; 
+	text-align: left;
+}
+
+div.box { 
+	width: 100px; 
+	height: 100px; 
+	color: white; 
+	margin: 3px 3px 3px 3px; 
+	display: block; 
+	padding: 3px; 
+	overflow: hidden; 
+	float: left;
+}
+
+div.box a { 
+	color: white; 
+	text-decoration: none; 
+}
+div.ms { 
+	background-color: orange; 
+}
+div.book { 
+	background-color: #666; 
+}
+
+div.version { 
+	width: 94px; 
+	height: 94px; 
+	border: 3px solid cornflowerblue;
+	
+}
+
+p.nav {
+	background-color: #eee; font-size: 90%;
+}

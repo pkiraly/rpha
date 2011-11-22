@@ -1,0 +1,7 @@
+<option value="">-- [ válasszon! ] --</option>
+<option value="1">a szerző névmegjelölésével</option>
+<option value="2">szerzőjét nem ismerjük</option>
+<option value="3">a szerzőnek tulajdonították</option>
+<option value="4">modern kutatás alapján</option>
+<option value="5">gyűjtemény a szerző neve alatt</option>
+<option value="6">anagrammatikusan szignált</option>

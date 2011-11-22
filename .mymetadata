@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="rpha"
+  id="myeclipse.1316518695892"
+  context-root="/rpha"
+  j2ee-spec="5.0"
+  archive="rpha.war">
+  <attributes>
+    <attribute name="webrootdir" value="web" />
+  </attributes>
+</project-module>
+

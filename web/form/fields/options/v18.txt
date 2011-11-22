@@ -1,0 +1,6 @@
+<option value="">-- [ válasszon! ] --</option>
+<option value="all">német</option>
+<option value="gre">görög</option>
+<option value="cro">horvát</option>
+<option value="hon">magyar</option>
+<option value="lat">latin</option>

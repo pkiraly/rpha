@@ -1,0 +1,4 @@
+<option value="">-- [ válasszon! ] --</option>
+<option value="1">A vers szövegvers</option>
+<option value="2">A vers énekvers</option>
+<option value="3">Bizonytalan, hogy énekelték-e</option>

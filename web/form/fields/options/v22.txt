@@ -1,0 +1,8 @@
+<option value="">-- [ válasszon! ] --</option>
+<option value="1">pontosan</option>
+<option value="2">nem később, mint</option>
+<option value="3">nem korábban, mint</option>
+<option value="4">kb.</option>
+<option value="5">korábban, mint kb.</option>
+<option value="6">x és y között</option>
+<option value="7">vagy</option>

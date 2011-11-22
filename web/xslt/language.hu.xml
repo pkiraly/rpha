@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keys>
+		<key id="author">Szerző</key>
+
+		<key id="caesuras">Sorok belső felosztása - cezúrák</key>
+
+		<key id="date">Datálás</key>
+
+		<key id="declination">Lejtés (milyen a sorok végződése)</key>
+
+		<key id="declination.line">A verssorok lejtése (egy egész versre érvényes módon)</key>
+		<key id="declination.line.01">ereszkedő sor</key>
+		<key id="declination.line.02">emelkedő sor</key>
+		<key id="declination.line.03">nem releváns a verselés szempontjából</key>
+		<key id="declination.scheme">lejtési képlet</key>
+		<key id="declination.strophe">versszakok lejtése</key>
+		<key id="declination.strophe.01">homogonikus</key>
+		<key id="declination.strophe.02">heterogonikus</key>
+
+		<key id="genre">Műfaj</key>
+
+		<key id="language">Nyelv</key>
+
+		<key id="language.01">sporadikus kétnyelvűség</key>
+		<key id="language.02">nyelvváltás soronként</key>
+		<key id="language.03">nyelvváltás versszakonként</key>
+		<key id="language.04">a refrén más nyelvű, mint a strófa teste</key>
+		<key id="language.qualifier">típus</key>
+
+		<key id="melody">Dallam</key>
+
+		<key id="melody.01">énekelt volt</key>
+		<key id="melody.01.01">van kotta</key>
+		<key id="melody.01.02">nincs kotta</key>
+		<key id="melody.02">nem volt énekelt</key>
+		<key id="melody.03">nem tudjuk</key>
+
+		<key id="meter">Metrika</key>
+
+		<key id="meter.01">időmértékes</key>
+		<key id="meter.01.01-01">hexameter - egysoros vers - monosztichon</key>
+		<key id="meter.01.01-02">hexameter &#x2013; több soros vers</key>
+		<key id="meter.01.02-01">disztichon &#x2013; 1</key>
+		<key id="meter.01.02-02">disztichon több</key>
+		<key id="meter.01.03">meghatározható időmértékes, nem hexameter sem disztichon (az antik tradícióban szereplő sorfajták)</key>
+		<key id="meter.01.04">bizonytalan időmértékes (nem hagyományos, vagy nem pontosan meghatározható sorfajta)</key>
+		<key id="meter.02">szótagszámláló</key>
+		<key id="meter.03">szótagszámláló tendenciájú</key>
+		<key id="meter.04">ütemszámláló</key>
+		<key id="meter.05">szószámláló</key>
+		<key id="meter.06">szabadvers</key>
+		<key id="meter.07">egyszerre időmértékes és szótagszámláló</key>
+		<key id="meter.07.01">németes</key>
+		<key id="meter.07.02">ritmikus görög-latin</key>
+		<key id="meter.08">kevert kompozíciók (a vers egyes részei más-más metrikai rendszerbe illeszkednek)</key>
+
+		<key id="metrical_scheme">Metrikai képlet</key>
+
+		<key id="number_of_lines">Sorok száma</key>
+
+		<key id="number_of_strophes">Versszakok száma</key>
+
+		<key id="rhyme">Rímelés</key>
+
+		<key id="rhyme.01">rímtelen</key>
+		<key id="rhyme.01.01">rímtelen és alliteráló</key>
+		<key id="rhyme.01.02">rímtelen, de nem az alliteráción alapul</key>
+		<key id="rhyme.02">rímes</key>
+		<key id="rhyme.03">asszonáncos</key>
+		<key id="rhyme.04">szórefrénes (önrímek vannak az egymást követő strófákban, rendszerszerűen (pl. szextina))</key>
+
+		<key id="rhyme_scheme">Rímképlet</key>
+
+		<key id="segmentation">Szakaszok</key>
+
+		<key id="segmentation.01">strofikus &#x2013; több versszak</key>
+		<key id="segmentation.01.01">izostrofikus</key>
+		<key id="segmentation.01.02">heterostrofikus</key>
+		<key id="segmentation.02">strofikus &#x2013; egy versszak</key>
+		<key id="segmentation.03">párrímes</key>
+		<key id="segmentation.04">laisse-ekben, változó hosszúságú szakaszokban</key>
+		<key id="segmentation.05">rimes couées</key>
+		<key id="segmentation.06">terza rima</key>
+</keys>

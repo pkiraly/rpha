@@ -1,0 +1,4 @@
+<option value="">-- [ válasszon! ] --</option>
+<option value="1">A versnek van kolofonja</option>
+<option value="2">A versnek nincs kolofonja</option>
+<option value="3">Nem tudjuk</option>

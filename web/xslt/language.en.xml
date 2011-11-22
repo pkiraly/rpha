@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keys>
+	<key id="author">Author</key>
+
+	<key id="caesuras">Caesuras</key>
+
+	<key id="date">Date</key>
+
+	<key id="declination">Declination</key>
+
+	<key id="declination.line">declination of lines</key>
+	<key id="declination.line.01">descendant</key>
+	<key id="declination.line.02">ascendant</key>
+	<key id="declination.line.03">non applicable</key>
+	<key id="declination.scheme">declination scheme</key>
+	<key id="declination.strophe">declination of strophe</key>
+	<key id="declination.strophe.01">homogonic</key>
+	<key id="declination.strophe.02">heterogonic</key>
+
+	<key id="genre">Genre</key>
+
+	<key id="language">Language</key>
+
+	<key id="language.01">sporadic bilinguism</key>
+	<key id="language.02">change language by rows</key>
+	<key id="language.03">change language in strophes</key>
+	<key id="language.04">the refrain and body of strophe are in different languages</key>
+	<key id="language.qualifier">type</key>
+
+	<key id="melody">Melody</key>
+
+	<key id="melody.01">poem was sung</key>
+	<key id="melody.01.01">has sheet</key>
+	<key id="melody.01.02">has not sheet</key>
+	<key id="melody.02">poem was not sung</key>
+	<key id="melody.03">undecideable</key>
+
+	<key id="meter">Metrics</key>
+
+	<key id="meter.01">Graeco-Roman metrical versification</key>
+	<key id="meter.01.01-01">hexameter \u2013 one verse</key>
+	<key id="meter.01.01-02">hexameter \u2013 several verses</key>
+	<key id="meter.01.02-01">distich \u2013 one</key>
+	<key id="meter.01.02-02">distichs \u2013 several</key>
+	<key id="meter.01.03">Graeco-Roman metrical poetry (classical meter, different from hexameter or pentameter)</key>
+	<key id="meter.01.04">uncertain Graeco-Roman metrical poetry</key>
+	<key id="meter.02">syllabic</key>
+	<key id="meter.03">tendency to be syllabic</key>
+	<key id="meter.04">tonic</key>
+	<key id="meter.05">each word is a foot</key>
+	<key id="meter.06">free verse</key>
+	<key id="meter.07">syllabo-tonic</key>
+	<key id="meter.07.01">german</key>
+	<key id="meter.07.02">greek</key>
+	<key id="meter.08">mixed compositions (different parts of the text in different metrical systems)</key>
+
+	<key id="metrical_scheme">Metrical Structure (verse length)</key>
+
+	<key id="number_of_lines">Number of lines</key>
+
+	<key id="number_of_strophes">Number of strophes</key>
+
+	<key id="rhyme">Rhymes</key>
+
+	<key id="rhyme.01">no end-rhymes</key>
+	<key id="rhyme.01.01">alliterating, non-rhyming</key>
+	<key id="rhyme.01.02">non-alliterating, non-rhyming</key>
+	<key id="rhyme.02">rhyming</key>
+	<key id="rhyme.03">assonanced</key>
+	<key id="rhyme.04">word-refrain rhyming</key>
+
+	<key id="rhyme_scheme">Rhyming Structure of the Stanza</key>
+
+	<key id="segmentation">Segments</key>
+
+	<key id="segmentation.01">strophic \u2013 more than one stanza</key>
+	<key id="segmentation.01.01">isostrophic</key>
+	<key id="segmentation.01.02">heterostrophic</key>
+	<key id="segmentation.02">strophic \u2013 one strophe</key>
+	<key id="segmentation.03">rhyming couplets</key>
+	<key id="segmentation.04">laisses</key>
+	<key id="segmentation.05">rimes cou\u00E9es, serventese</key>
+	<key id="segmentation.06">terza rima</key>
+</keys>

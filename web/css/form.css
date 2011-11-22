@@ -1,0 +1,62 @@
+/* form.css
+ * used by the editVersion.jsp
+ */
+body, input, textarea, option { 
+	font-family: verdana, sans-serif; font-size: 10pt; 
+}
+
+a { 
+	text-decoration: none; 
+	color: red;
+}
+
+.inputs label {
+	border: 0;
+	color: black;
+	display: inline;
+	overflow: hidden;
+	clip: rect();
+	float: none;
+}
+
+.inputs label.text {
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+
+label {
+	width: 100px;
+	float: left;
+	color: navy;
+	border-top: 3px solid navy;
+	display: block;
+}
+
+table.fields {
+	border-top: 3px solid red;
+	float: none;
+}
+
+tr.unit {
+	border: 1px solid black;
+}
+
+td.inputs {
+	width: 230px;
+}
+
+td.controll {
+	width: 100px;
+}
+
+span.helpContent {
+	display: none;
+}
+
+div#messages {
+	position: absolute;
+	top: 20px;
+	left: 500px;
+	width: 600px;
+}
