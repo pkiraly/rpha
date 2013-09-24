@@ -1010,25 +1010,52 @@
 				</xsl:choose>
 			</xsl:element>
 		</xsl:if>
-		
-		<!-- MEK link -->
-		<xsl:if test="$bookId = 'RMK1-0332' or $bookId = 'RMNY-0353'">
-			<xsl:text> </xsl:text>
-			<a>
-				<xsl:attribute name="href">
-					<xsl:text>http://mek.oszk.hu/rmk/1/332/</xsl:text>
-					<xsl:value-of select="concat($itemSubId, '/', $page)"/>
-					<xsl:if test="$pageSubid">
-						<xsl:value-of select="$pageSubid" />
-					</xsl:if>
-				</xsl:attribute>
-				<xsl:text>&#187;MEK</xsl:text>
-			</a>
-		</xsl:if>
-		
-	</xsl:if>
 
+		<!-- MEK link -->
+    <xsl:variable name="mekPath">
+      <xsl:choose>
+        <xsl:when test="$bookId = 'RMK1-0332' or $bookId = 'RMNY-0353'">rmk/1/332</xsl:when>
+        <xsl:when test="$bookId = 'RMNY-0540'">rmny/540</xsl:when>
+        <xsl:otherwise></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+
+		<xsl:if test="$mekPath != ''">
+      <xsl:call-template name="mekLink">
+        <xsl:with-param name="mekPath" select="$mekPath" />
+        <xsl:with-param name="itemSubId" select="$itemSubId" />
+        <xsl:with-param name="page" select="$page" />
+        <xsl:with-param name="pageSubid" select="$pageSubid" />
+      </xsl:call-template>
+		</xsl:if>
+	</xsl:if>
 </xsl:template>
+
+<xsl:template name="mekLink">
+  <xsl:param name="mekPath"/>
+  <xsl:param name="itemSubId"/>
+  <xsl:param name="page"/>
+  <xsl:param name="pageSubid"/>
+  <xsl:text> </xsl:text>
+  <a>
+    <xsl:attribute name="href">
+      <xsl:text>http://mek.oszk.hu/</xsl:text>
+      <xsl:value-of select="$mekPath" />
+      <xsl:if test="$itemSubId and $itemSubId != ' '">
+        <xsl:value-of select="concat('/', $itemSubId)"/>
+      </xsl:if>
+      <xsl:if test="$page and $page != ' '">
+        <xsl:value-of select="concat('/', $page)"/>
+      </xsl:if>
+      <xsl:if test="$pageSubid">
+        <xsl:value-of select="$pageSubid" />
+      </xsl:if>
+    </xsl:attribute>
+    <xsl:text>&#187;MEK</xsl:text>
+  </a>
+</xsl:template>
+
+
 
 <xsl:template match="v53" mode="rmdt">
 	<xsl:choose>
