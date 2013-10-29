@@ -1014,7 +1014,21 @@
 		<!-- MEK link -->
 		<xsl:variable name="mekPath">
 			<xsl:choose>
+				<xsl:when test="$bookId = 'RMNY-0303'">rmny/303</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0327'">rmny/327</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0348'">rmny/348</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0350'">rmny/350</xsl:when>
 				<xsl:when test="$bookId = 'RMK1-0332' or $bookId = 'RMNY-0353'">rmk/1/332</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0359'">rmny/359</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0437'">rmny/437</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0438'">rmny/438</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0439'">rmny/439</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0441'">rmny/441</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0460'">rmny/460</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0468'">rmny/468</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0492'">rmny/492</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0493'">rmny/493</xsl:when>
+				<xsl:when test="$bookId = 'RMNY-0510'">rmny/510</xsl:when>
 				<xsl:when test="$bookId = 'RMNY-0540'">rmny/540</xsl:when>
 				<xsl:otherwise></xsl:otherwise>
 			</xsl:choose>
