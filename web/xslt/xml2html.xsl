@@ -386,9 +386,7 @@
 					<xsl:text>, </xsl:text>
 				</xsl:if>
 				<xsl:variable name="refid" select="./@s1" />
-				<xsl:comment>* refid: <xsl:value-of select="$refid" /> *</xsl:comment>
 				<xsl:variable name="ref" select="//rec[v1/@value=$refid]" />
-				<xsl:comment>* ref/@id: <xsl:value-of select="$ref/@id" /> *</xsl:comment>
 				<xsl:if test="$ref/v2">
 					<xsl:value-of select="$ref/v2/@value" />
 				</xsl:if>
@@ -986,7 +984,7 @@
 	</xsl:if>
 
 	<xsl:value-of select="$forrasRovidites"/>
-	
+
 	<!-- page nr -->
 	<xsl:if test="string-length($page) > 0">
 		<xsl:choose>
