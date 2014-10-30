@@ -987,26 +987,51 @@
 
 	<xsl:variable name="mekPath">
 		<xsl:choose>
+			<xsl:when test="$bookId = 'RMK1-0007' or $bookId = 'RMNY-0017'">rmny/17</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0322' or $bookId = 'RMNY-0080'">rmny/80</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0033' or $bookId = 'RMNY-0109'">rmny/109</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0338' or $bookId = 'RMNY-0303'">rmny/303</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0094' or $bookId = 'RMNY-0327'">rmny/327</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0109' or $bookId = 'RMNY-0348'">rmny/348</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0111' or $bookId = 'RMNY-0350'">rmny/350</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0332' or $bookId = 'RMNY-0353'">rmk/1/332</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0117' or $bookId = 'RMNY-0359'">rmny/359</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0128' or $bookId = 'RMNY-0385'">rmny/385</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0131' or $bookId = 'RMNY-0386'">rmny/386</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0154' or $bookId = 'RMNY-0437'">rmny/437</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0155' or $bookId = 'RMNY-0438'">rmny/438</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0156' or $bookId = 'RMNY-0439'">rmny/439</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0159' or $bookId = 'RMNY-0441'">rmny/441</xsl:when>
-			<xsl:when test="                         $bookId = 'RMNY-0458'">rmny/458</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0165' or $bookId = 'RMNY-0458'">rmny/458</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0166' or $bookId = 'RMNY-0460'">rmny/460</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0343' or $bookId = 'RMNY-0461'">rmny/461</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0168' or $bookId = 'RMNY-0465'">rmny/465</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0174' or $bookId = 'RMNY-0468'">rmny/468</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0181' or $bookId = 'RMNY-0492'">rmny/492</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0182' or $bookId = 'RMNY-0493'">rmny/493</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0193' or $bookId = 'RMNY-0510'">rmny/510</xsl:when>
 			<xsl:when test="                         $bookId = 'RMNY-0531'">rmny/531</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0208' or $bookId = 'RMNY-0540'">rmny/540</xsl:when>
-			<xsl:when test="                         $bookId = 'RMNY-0956'">rmny/956</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0243' or $bookId = 'RMNY-0662'">rmny/662</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0255' or $bookId = 'RMNY-0683'">rmny/683</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0257' or $bookId = 'RMNY-0686'">rmny/686</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0258' or $bookId = 'RMNY-0687'">rmny/687</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0280' or $bookId = 'RMNY-0774'">rmny/774</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0298' or $bookId = 'RMK2-0277' or $bookId = 'RMNY-0815'">rmny/815</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0317' or $bookId = 'RMNY-0820'">rmny/820</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0311' or $bookId = 'RMNY-0858'">rmny/858</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0315' or $bookId = 'RMNY-0869'">rmny/869</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0403' or $bookId = 'RMNY-0945'">rmny/945</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0405' or $bookId = 'RMNY-0952'">rmny/952</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0358' or $bookId = 'RMNY-0953'">rmny/953</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0327' or $bookId = 'RMNY-0954'">rmny/954</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0362' or $bookId = 'RMNY-0956'">rmny/956</xsl:when>
 			<xsl:when test="                         $bookId = 'RMNY-0957'">rmny/957</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0430' or $bookId = 'RMNY-0998'">rmny/998</xsl:when>
+			<xsl:when test="                         $bookId = 'RMNY-1102'">rmny/1102</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0482' or $bookId = 'RMNY-1166'">rmny/1166</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-1188' or $bookId = 'RMNY-1118'">rmny/1118</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0652' or $bookId = 'RMNY-1629'">rmny/1629</xsl:when>
 			<xsl:otherwise></xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
