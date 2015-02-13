@@ -42,14 +42,15 @@ A lefordított alkalmazás könyvtárszerkezete
 * `tomcat`: 5.5-ös Apache Tomcat szerver. (Az alábbiakban csak a fontosabb fájlokat/könyvtárakat emelem ki)
 ** `tomcat/bin`: indító scriptek
 ** `tomcat/common/classes/rpha.properties`: az RPHA alkalmazás alapvető könyvtárbeállításai (a fent felsorolt config, index és log könyvtárakat lehet itt megadni):
+** `tomcat/conf/tomcat-users.xml`: itt lehet beállítani a szerkesztők jelszavát
+** `tomcat/webapps/rpha`: maga az alkalmazás
+** `tomcat/webapps/rpha/WEB-INF`: ez azért fontos könyvtár, mert innen lehet elindítani néhány parancssori műveletet. Ezekhez az Apache Ant szükséges, amit Ubuntun "sudo apt-get install ant" paranccsal lehet telepíteni. (A fontosabb parancsokat lásd alább.)
+
+Példa a `tomcat/common/classes/rpha.properties` fájlra:
 
 	rpha.configDir    = /var/rpha/config
 	rpha.indexDir     = /var/rpha/index
 	rpha.logDir       = /var/rpha/log
-
-** `tomcat/conf/tomcat-users.xml`: itt lehet beállítani a szerkesztők jelszavát
-** `tomcat/webapps/rpha`: maga az alkalmazás
-** `tomcat/webapps/rpha/WEB-INF`: ez azért fontos könyvtár, mert innen lehet elindítani néhány parancssori műveletet. Ezekhez az Apache Ant szükséges, amit Ubuntun "sudo apt-get install ant" paranccsal lehet telepíteni. (A fontosabb parancsokat lásd alább.)
 
 Parancssori utasítások
 ===
