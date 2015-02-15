@@ -894,9 +894,9 @@
 </v52> -->
 
 <xsl:template name="hubook">
-	<xsl:param name="id"/>
-	<xsl:param name="value"/>
-	<xsl:param name="bookId"/>
+	<xsl:param name="id" />
+	<xsl:param name="value" />
+	<xsl:param name="bookId" />
 
 	<xsl:variable name="book">
 		<xsl:copy-of select="//rec[@id = $bookId]/*" />
@@ -1036,6 +1036,10 @@
 			<xsl:when test="$bookId = 'RMK1-0652' or $bookId = 'RMNY-1629'">rmny/1629</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0786' or $bookId = 'RMNY-2146'">rmny/2146</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0872' or $bookId = 'RMNY-2472'">rmny/2472</xsl:when>
+			<!-- Stoll -->
+			<xsl:when test="$bookId = 'MKEVB1-0003'">ref/stoll1963-2005/3</xsl:when>
+			<!-- Ms -->
+			<xsl:when test="$bookId = 'MKEVB0-0016'">ms/Nat/MNy/12</xsl:when>
 			<xsl:otherwise></xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
