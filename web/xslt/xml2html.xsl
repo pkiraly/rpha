@@ -1039,7 +1039,7 @@
 			<!-- Stoll -->
 			<xsl:when test="$bookId = 'MKEVB1-0003'">ref/stoll1963-2005/3</xsl:when>
 			<!-- Ms -->
-			<xsl:when test="$bookId = 'MKEVB0-0016'">ms/Nat/MNy/12</xsl:when>
+			<xsl:when test="$bookId = 'MKEVB0-0016'">ms/hu/B1/MNy/12</xsl:when>
 			<xsl:otherwise></xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
