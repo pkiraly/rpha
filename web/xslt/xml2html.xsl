@@ -993,9 +993,11 @@
 			<xsl:when test="$bookId = 'RMK1-0323' or $bookId = 'RMNY-0299'">rmny/299</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0338' or $bookId = 'RMNY-0303'">rmny/303</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0094' or $bookId = 'RMNY-0327'">rmny/327</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0105' or $bookId = 'RMNY-0340'">rmny/340</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0109' or $bookId = 'RMNY-0348'">rmny/348</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0111' or $bookId = 'RMNY-0350'">rmny/350</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0332' or $bookId = 'RMNY-0353'">rmk/1/332</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0355c' or $bookId = 'RMNY-0357'">rmny/357</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0117' or $bookId = 'RMNY-0359'">rmny/359</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0128' or $bookId = 'RMNY-0385'">rmny/385</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0131' or $bookId = 'RMNY-0386'">rmny/386</xsl:when>
@@ -1006,18 +1008,27 @@
 			<xsl:when test="$bookId = 'RMK1-0165' or $bookId = 'RMNY-0458'">rmny/458</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0166' or $bookId = 'RMNY-0460'">rmny/460</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0343' or $bookId = 'RMNY-0461'">rmny/461</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0169' or $bookId = 'RMNY-0462'">rmny/462</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0168' or $bookId = 'RMNY-0465'">rmny/465</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0174' or $bookId = 'RMNY-0468'">rmny/468</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0181' or $bookId = 'RMNY-0492'">rmny/492</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0182' or $bookId = 'RMNY-0493'">rmny/493</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0191' or $bookId = 'RMNY-0508'">rmny/508</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0193' or $bookId = 'RMNY-0510'">rmny/510</xsl:when>
 			<xsl:when test="                         $bookId = 'RMNY-0531'">rmny/531</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0208' or $bookId = 'RMNY-0540'">rmny/540</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0361' or $bookId = 'RMNY-0594'">rmny/594</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0243' or $bookId = 'RMNY-0662'">rmny/662</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0249' or $bookId = 'RMNY-0671'">rmny/671</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0255' or $bookId = 'RMNY-0683'">rmny/683</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0257' or $bookId = 'RMNY-0686'">rmny/686</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0340' or $bookId = 'RMNY-0685'">rmny/685</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0258' or $bookId = 'RMNY-0687'">rmny/687</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0271' or $bookId = 'RMNY-0729'">rmny/729</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0280' or $bookId = 'RMNY-0774'">rmny/774</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0293' or $bookId = 'RMNY-0807'">rmny/807</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0368' or $bookId = 'RMNY-0777'">rmny/777</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0282' or $bookId = 'RMNY-0778'">rmny/778</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0298' or $bookId = 'RMK2-0277' or $bookId = 'RMNY-0815'">rmny/815</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0317' or $bookId = 'RMNY-0820'">rmny/820</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0311' or $bookId = 'RMNY-0858'">rmny/858</xsl:when>
@@ -1029,28 +1040,17 @@
 			<xsl:when test="$bookId = 'RMK1-0362' or $bookId = 'RMNY-0956'">rmny/956</xsl:when>
 			<xsl:when test="                         $bookId = 'RMNY-0957'">rmny/957</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0430' or $bookId = 'RMNY-0998'">rmny/998</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0443' or $bookId = 'RMNY-1059'">rmny/1059</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0430' or $bookId = 'RMNY-1090'">rmny/1090</xsl:when>
 			<xsl:when test="                         $bookId = 'RMNY-1102'">rmny/1102</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0482' or $bookId = 'RMNY-1166'">rmny/1166</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0490' or $bookId = 'RMNY-1178'">rmny/1178</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-1188'                         ">rmk/1/1188</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0500' or $bookId = 'RMNY-1213'">rmny/1213</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0632' or $bookId = 'RMNY-1574'">rmny/1574</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0652' or $bookId = 'RMNY-1629'">rmny/1629</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0786' or $bookId = 'RMNY-2146'">rmny/2146</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0872' or $bookId = 'RMNY-2472'">rmny/2472</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0105' or $bookId = 'RMNY-0340'">rmny/340</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0355c' or $bookId = 'RMNY-0357'">rmny/357</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0169' or $bookId = 'RMNY-0462'">rmny/462</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0191' or $bookId = 'RMNY-0508'">rmny/508</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0361' or $bookId = 'RMNY-0594'">rmny/594</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0249' or $bookId = 'RMNY-0671'">rmny/671</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0340' or $bookId = 'RMNY-0685'">rmny/685</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0271' or $bookId = 'RMNY-0729'">rmny/729</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0368' or $bookId = 'RMNY-0777'">rmny/777</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0282' or $bookId = 'RMNY-0778'">rmny/778</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0293' or $bookId = 'RMNY-0807'">rmny/807</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0443' or $bookId = 'RMNY-1059">rmny/1059</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0430' or $bookId = 'RMNY-1090'">rmny/1090</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0490' or $bookId = 'RMNY-1178'">rmny/1178</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0632' or $bookId = 'RMNY-1574'">rmny/1574</xsl:when>
 			<!-- Stoll -->
 			<xsl:when test="$bookId = 'MKEVB1-0003'">ref/stoll1963-2005/3</xsl:when>
 			<!-- Ms -->
