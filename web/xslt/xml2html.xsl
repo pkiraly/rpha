@@ -1041,7 +1041,7 @@
 			<xsl:when test="                         $bookId = 'RMNY-0957'">rmny/957</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0430' or $bookId = 'RMNY-0998'">rmny/998</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0443' or $bookId = 'RMNY-1059'">rmny/1059</xsl:when>
-			<xsl:when test="$bookId = 'RMK1-0430' or $bookId = 'RMNY-1090'">rmny/1090</xsl:when>
+			<xsl:when test="$bookId = 'RMK1-0456' or $bookId = 'RMNY-1090'">rmny/1090</xsl:when>
 			<xsl:when test="                         $bookId = 'RMNY-1102'">rmny/1102</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0482' or $bookId = 'RMNY-1166'">rmny/1166</xsl:when>
 			<xsl:when test="$bookId = 'RMK1-0490' or $bookId = 'RMNY-1178'">rmny/1178</xsl:when>
